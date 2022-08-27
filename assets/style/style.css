@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+.inputError_userNameR, 
+.inputError_userLastNameR, 
+.inputError_userEmailR,
+.inputError_password1,
+.inputError_password2{
+    display: none;
+}
+
+.errorInputActive{
+    display: block;
+}

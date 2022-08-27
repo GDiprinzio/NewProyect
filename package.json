@@ -1,0 +1,11 @@
+{
+  "name": "newproyect",
+  "version": "1.0.0",
+  "description": "revision del proyecto que se hizo para la clase de Coderhouse_Javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Di Prinzio",
+  "license": "ISC"
+}

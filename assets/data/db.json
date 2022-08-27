@@ -1,0 +1,34 @@
+[
+    {
+      "userId":"1",
+      "userName": null,
+      "userLastName": null,
+      "userEmail": "admin@admin.com",
+      "userPassword": "123456",
+      "userAdmin": true
+    },
+    {
+      "userId":"2",
+      "userName": "Gabriel",
+      "userLastName": "Di Prinzio",
+      "userEmail": "gdiprinzio@gmail.com",
+      "userPassword": "1976",
+      "userAdmin": true
+    },
+    {
+      "userId":"3",
+      "userName": "Bruno",
+      "userLastName": "Tutor",
+      "userEmail": "brunotutor@gmail.com",
+      "userPassword": "1976",
+      "userAdmin": false
+    },
+    {
+      "userId":"4",
+      "userName": "Rick",
+      "userLastName": "Hunter",
+      "userEmail": "vf1j_pilot@gmail.com",
+      "userPassword": "1982",
+      "userAdmin": false
+    }
+  ]

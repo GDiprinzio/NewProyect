@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style/style.css">
+
+  <title>Protal de usuarios</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Portal de Usuarios</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+        <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+          Login
+        </button>
+        <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#registerModal">
+          Registro
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modals -->
+  <!-- Modal Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login de usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 needs-validation" id="formLogin" novalidate>
+            <div class="col-md-12">
+              <label for="userEmailL" class="form-label">Ingrese su e-mail:</label>
+              <input type="e-mail" class="form-control" id="userEmailL" name="userEmailL" required>
+              <p class="inputError_userEmailR invalid-feedback">El correo solo puede contener letras, numeros, puntos,
+                guiones y guion
+                bajo.</p>
+            </div>
+            <div class="col-md-12">
+              <label for="passwordL" class="form-label">Ingrese su contraseña: </label>
+              <input type="password" class="form-control" id="passwordL" name="passwordL" required>
+              <p class="inputError_userNameR invalid-feedback">La constraseña debe de ser de 4 a 12 digitos</p>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Inciar sesión</button>
+            </div>
+          </form>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Register-->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registro de usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-4 needs-validation" id="formRegister" novalidate>
+            <div class="col-md-6" id="item_userNameR">
+              <label for="userNameR" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="userNameR" name="userNameR" required>
+              <p class="inputError_userNameR invalid-feedback">El nombre debe contener solamente letras.</p>
+            </div>
+            <div class="col-md-6" id="item_userLastNameR">
+              <label for="userLastNameR" class="form-label">Apellido:</label>
+              <input type="text" class="form-control" id="userLastNameR" name="userLastNameR" required>
+              <p class="inputError_userLastNameR invalid-feedback">El apellido debe contener solamente letras.</p>
+            </div>
+            <div class="col-md-12" id="item_userEmailR">
+              <label for="userEmailR" class="form-label">Ingrese su correo electrónico:</label>
+              <input type="email" class="form-control" id="userEmailR" name="userEmailR"
+                aria-describedby="inputGroupPrepend" required>
+              <p class="inputError_userEmailR invalid-feedback">El correo solo puede contener letras, numeros, puntos,
+                guiones y guion
+                bajo.</p>
+            </div>
+            <div class="col-md-6" id="item_password1">
+              <label for="password1" class="form-label">Ingrese una contraseña:</label>
+              <input type="password" class="form-control" id="password1" name="password1" required>
+              <p class="inputError_userNameR invalid-feedback">La constraseña debe de ser de 4 a 12 digitos</p>
+            </div>
+            <div class="col-md-6" id="item_password2">
+              <label for="password2" class="form-label">Ingrese nuevamente:</label>
+              <input type="password" class="form-control" id="password2" name="password2" value="nombre" required>
+              <p class="inputError_userNameR invalid-feedback">Ambas contraseñas deben ser iguales</p>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Registrarse</button>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-light text-center text-lg-start fixed-bottom">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright: Gabriel N. Di Prinzio
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- SWEETALERT2 -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- SCRIPT -->
+  <script src="./assets/js/app.js" type="module" defer></script>
+</body>
+
+</html>
